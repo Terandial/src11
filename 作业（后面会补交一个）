@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html,
+        body {
+            height: 100%;
+        }
+        
+        div {
+            border-radius: 15px 15px 15px 15px;
+            text-align: center;
+            line-height: 200px;
+        }
+        
+        .box1 {
+            width: 200px;
+            height: 200px;
+            background-color: aquamarine;
+            flex-grow: 0;
+            flex-shrink: 0;
+        }
+        
+        .box2 {
+            width: 300px;
+            height: 300px;
+            background-color: bisque;
+            flex-grow: 1;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+        
+        .box3 {
+            width: 200px;
+            height: 400px;
+            background-color: chartreuse;
+            font-size: 30px;
+            align-self: flex-start;
+            align-self: baseline;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+        
+        .box4 {
+            width: 200px;
+            height: 500px;
+            background-color: darkorange;
+            font-size: 30px;
+            flex-shrink: 3;
+            align-self: flex-start;
+            align-self: baseline;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+        
+        body {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1">喜羊羊</div>
+    <div class="box2">美羊羊</div>
+    <div class="box3">懒洋洋沸羊羊</div>
+    <div class="box4">红太狼灰太狼</div>
+</body>
+
+</html>
